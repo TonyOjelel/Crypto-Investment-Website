@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create an Account - Crypto Investment Website</title>
+  <link rel="stylesheet" type="text/css" href="create.css">
+</head>
+<body>
+  <h1>Create an Account</h1>
+
+  <form action="create-account.php" method="post" onsubmit="return validateForm()">
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Create Account">
+  </form>
+
+  <h2>Verify Your Email Address</h2>
+
+  <p>We have sent a verification email to <strong id="email-address"></strong>. Please click on the link in the email to complete your registration.</p>
+
+  <button id="resend-verification" onclick="resendVerification()">Resend Verification Email</button>
+
+  <script src="create.js"></script>
+</body>
+</html>
